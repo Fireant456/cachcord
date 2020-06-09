@@ -79,6 +79,7 @@ a ini-like syntax. An example is available in the `cachcord.ini.dist` file.
 Please refer to Cachet's API documentation as well as Discord's developper
 documentation in order to configure the API URL as well as the webhook
 url, respectively.
+
 ======================
 
 Adapted to docker implementation from [Carpe Noctem Tactical Operations script](https://github.com/CntoDev/cachcord)
