@@ -1,6 +1,9 @@
-Carpe Noctem Tactical Operations Cachet to Discord integration script
+Cachet to Discord integration script
 =====================================================================
 
+.. image:: https://img.shields.io/docker/cloud/build/fireant456/cachcord?style=plastic
+    :target: https://hub.docker.com/r/fireant456/cachcord
+    :alt: Docker Build Status
 .. image:: https://travis-ci.org/CntoDev/cachcord.svg?branch=master
     :target: https://travis-ci.org/CntoDev/cachcord
     :alt: Build Status
@@ -14,8 +17,7 @@ Carpe Noctem Tactical Operations Cachet to Discord integration script
     :target: https://requires.io/github/CntoDev/cachcord/requirements/?branch=master
     :alt: Requirements Status
 
-Cachcord is an utility script used by the Carpe Noctem Tacical Operations
-community (http://carpenoctem.co) to provide Cachet component status updates
+Cachcord is an utility script to provide Cachet component status updates
 to a given Discord channel, using the Cachet API in one side,
 and a Discord Webhook in the other.
 
@@ -24,6 +26,18 @@ Requirements
 
 - Python 3.5
 - Third-party libraries defined in the ``setup.py`` file.
+
+Installation (Docker)
+------------
+
+To install the script in your docker environment, download the `docker-compose.yml` file,
+`cachcord.ini.dist` file and modify to your parameters.
+Create a data.file in your docker-compose project directory 
+and run the container with
+
+.. code-block:: bash
+
+    $ docker-compose up [-d]
 
 Installation
 ------------
@@ -66,3 +80,5 @@ Please refer to Cachet's API documentation as well as Discord's developper
 documentation in order to configure the API URL as well as the webhook
 url, respectively.
 ======================
+
+Adapted to docker implementation from [Carpe Noctem Tactical Operations script](https://github.com/CntoDev/cachcord)
