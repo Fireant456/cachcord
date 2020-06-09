@@ -4,8 +4,6 @@ WORKDIR /app
 
 ADD . /app
 
-RUN ls -lah
-
 RUN pip install .
 
-CMD [ "cachecord" ]
+CMD [ "cachcord" ]

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  cachcord:
+    image: fireant456/cachcord
+    restart: unless-stopped
+    volumes:
+        - ./cachcord.ini.dist:/app/config.ini
+        - ./data:/app/data
+    command: cachcord --config-path /app/config.ini --persist-path /app/data
