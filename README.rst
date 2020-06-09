@@ -1,7 +1,7 @@
 Cachet to Discord integration script
 =====================================================================
 
-.. image:: https://img.shields.io/docker/cloud/build/fireant456/cachcord?style=plastic
+.. image:: https://img.shields.io/docker/cloud/build/fireant456/cachcord
     :target: https://hub.docker.com/r/fireant456/cachcord
     :alt: Docker Build Status
 .. image:: https://travis-ci.org/CntoDev/cachcord.svg?branch=master
