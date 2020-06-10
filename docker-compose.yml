@@ -6,5 +6,3 @@ services:
     restart: unless-stopped
     volumes:
         - ./cachcord.ini.dist:/app/config.ini
-        - ./data:/app/data
-    command: cachcord --config-path /app/config.ini --persist-path /app/data

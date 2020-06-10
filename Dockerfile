@@ -1,9 +1,14 @@
-FROM python:3
+FROM ubuntu:latest
+
+RUN apt-get update -y && \
+    apt-get install -y python3-pip python3-dev
 
 WORKDIR /app
 
 ADD . /app
 
-RUN pip install .
+RUN pip3 install .
 
-CMD [ "cachcord" ]
+RUN touch /app/cachcord.log
+
+CMD /app/daemon.sh && tail -f /var/log/cron
